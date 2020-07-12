@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.guilanzamineng.myapplication.MainActivity">
+
+
+    <item
+        android:id="@+id/Show_Excel_Menu_Visible_Fab"
+        android:orderInCategory="100"
+        android:title="@string/Menu_Excel_Visible_Fab"
+        app:showAsAction="never"
+        />
+
+</menu>

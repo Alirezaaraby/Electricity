@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/SplashScreen_Toolbar</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="Excel" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/Excel_Creator_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/Excel_Creator_colorPrimaryDark</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="PDF" parent="Theme.MaterialComponents.Light">
+        <item name="colorPrimary">@color/Excel_Creator_colorPrimary</item>
+        <item name="colorPrimaryDark">#E74C3C</item>
+
+        <item name="colorAccent">#DA0303</item>
+    </style>
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/Excel_Creator_EditTextBorder</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="hintTextColor">@color/colorAccent</item>
+    </style>
+
+    <style name="TextInputLayoutStyle_PDF" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#B03A2E</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="hintTextColor">#DA0303</item>
+    </style>
+
+</resources>

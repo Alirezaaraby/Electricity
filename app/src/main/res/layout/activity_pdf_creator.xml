@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Excel_Creator"
+    android:id="@+id/Parent_Coordinator_Excel_PDF">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView_PDF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/Header"
+                android:textSize="25sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/SUBSTATION_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/SUBSTATION"
+                android:layout_marginBottom="12dp"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/baseline_location_on_black_24dp"
+                android:layout_marginTop="13dp"
+                style="@style/TextInputLayoutStyle_PDF"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@null" android:text="1"
+                    android:id="@+id/SUBSTATION______PDF"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/BAY_NO_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/BAY_NO"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                style="@style/TextInputLayoutStyle_PDF"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true"
+                    android:text="1"
+                    android:id="@+id/BAY_NO______PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/PANEL_NO_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/PANEL_NO"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                style="@style/TextInputLayoutStyle_PDF"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true"
+                    android:text="1"
+                    android:id="@+id/PANEL_NO______PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/METER_MANUFACTURER_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/METER_MANUFACTURER"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                style="@style/TextInputLayoutStyle_PDF"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true"
+                    android:text="1"
+                    android:id="@+id/METER_MANUFACTURER______PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/CT_RATIO_PDF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/CT_RATIO"
+                    style="@style/TextInputLayoutStyle_PDF"
+                    app:endIconMode="clear_text"
+                    android:layout_marginBottom="12dp"
+                    android:layout_weight="5"
+                    android:layout_marginRight="3dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:singleLine="true"
+                        android:inputType="date" android:text="1/1"
+                        android:id="@+id/CT_RATIO______PDF"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/CT_RATIO_CLASS_PDF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/CT_RATIO_CLASS"
+                    style="@style/TextInputLayoutStyle_PDF"
+                    app:endIconMode="clear_text"
+                    android:layout_marginBottom="12dp"
+                    android:layout_weight="7"
+                    android:layout_marginLeft="3dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:singleLine="true"
+                        android:inputType="numberDecimal" android:text="1/1"
+                        android:id="@+id/CT_RATIO_CLASS______PDF"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/PT_RATIO_PDF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/PT_RATIO"
+                    style="@style/TextInputLayoutStyle_PDF"
+                    app:endIconMode="clear_text"
+                    android:layout_marginBottom="12dp"
+                    android:layout_weight="5"
+                    android:layout_marginRight="3dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:singleLine="true"
+                        android:inputType="date" android:text="1/1"
+                        android:id="@+id/PT_RATIO______PDF"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/PT_RATIO_CLASS_PDF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/PT_RATIO_CLASS"
+                    style="@style/TextInputLayoutStyle_PDF"
+                    app:endIconMode="clear_text"
+                    android:layout_marginBottom="12dp"
+                    android:layout_weight="7"
+                    android:layout_marginLeft="3dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:singleLine="true"
+                        android:inputType="numberDecimal" android:text="1/1"
+                        android:id="@+id/PT_RATIO_CLASS______PDF"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/METER_SCALE_RANGE_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/METER_SCALE_RANGE"
+                style="@style/TextInputLayoutStyle_PDF"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal" android:text="1"
+                    android:id="@+id/METER_SCALE_RANGE_Text_Input_Edit_Text_PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/METER_MODEL__SERIAL_NO_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/METER_MODEL_SERIAL_NO"
+                style="@style/TextInputLayoutStyle_PDF"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true" android:text="1"
+                    android:id="@+id/METER_MODEL__SERIAL__NO_PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="@string/REALـVALUEـIـLOAD"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/REAL_VALUEI_LOAD_PHASE_A_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/REALـVALUEـIـLOAD_PHASE_A"
+                style="@style/TextInputLayoutStyle_PDF"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp" android:layout_marginTop="20sp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal" android:text="1"
+                    android:id="@+id/REAL_VALUEI_LOAD_PHASE_A__PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/REAL_VALUEI_LOAD_PH_B_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/REALـVALUEـIـLOAD_PH_B"
+                style="@style/TextInputLayoutStyle_PDF"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal" android:text="1"
+                    android:id="@+id/REAL_VALUEI_LOAD_PH_B__PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/REAL_VALUEI_LOAD_PH_C_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/REALـVALUEـIـLOAD_PH_C"
+                style="@style/TextInputLayoutStyle_PDF"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal" android:text="1"
+                    android:id="@+id/REAL_VALUEI_LOAD_PH_C__PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="@string/I_ONLOAD_by_clamp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/I_ONLOAD_by_clamp_PH_A_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/I_ONLOAD_by_clamp_PH_A"
+                style="@style/TextInputLayoutStyle_PDF"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="13dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal" android:text="1"
+                    android:id="@+id/I_ONLOAD_by_clamp_PH_A__PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/I_ONLOAD_by_clamp_PH_B_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/I_ONLOAD_by_clamp_PH_B"
+                style="@style/TextInputLayoutStyle_PDF"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal" android:text="1"
+                    android:id="@+id/I_ONLOAD_by_clamp_PH_B__PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/I_ONLOAD_by_clamp_PH_c__PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/I_ONLOAD_by_clamp_PH_C"
+                style="@style/TextInputLayoutStyle_PDF"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal" android:text="1"
+                    android:id="@+id/I_ONLOAD_by_clamp_PH_C_PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="@string/REAL_VALUE_V_LOAD"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/REAL_VALUE_V_LOAD_PH_A_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/REAL_VALUE_V_LOAD_PH_A"
+                style="@style/TextInputLayoutStyle_PDF"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="13dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal" android:text="1"
+                    android:id="@+id/REAL_VALUE_V_LOAD_PH_A__PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/REAL_VALUE_V_LOAD_PH_B_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/REAL_VALUE_V_LOAD_PH_B"
+                style="@style/TextInputLayoutStyle_PDF"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal" android:text="1"
+                    android:id="@+id/REAL_VALUE_V_LOAD_PH_B__PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/REAL_VALUE_V_LOAD_PH_C_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/REAL_VALUE_V_LOAD_PH_C"
+                style="@style/TextInputLayoutStyle_PDF"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal" android:text="1"
+                    android:id="@+id/REAL_VALUE_V_LOAD_PH_C__PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:text="@string/V_ONLOAD_BY_V_M_V_LOAD"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/V_ONLOAD_BY_V_M_V_LOAD_PH_A_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/V_ONLOAD_BY_V_M_V_LOAD_PH_A"
+                style="@style/TextInputLayoutStyle_PDF"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="13dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal" android:text="1"
+                    android:id="@+id/V_ONLOAD_BY_V_M_V_LOAD_PH_A__PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/V_ONLOAD_BY_V_M_V_LOAD_PH_B_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/V_ONLOAD_BY_V_M_V_LOAD_PH_B"
+                style="@style/TextInputLayoutStyle_PDF"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal" android:text="1"
+                    android:id="@+id/V_ONLOAD_BY_V_M_V_LOAD_PH_B__PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/V_ONLOAD_BY_V_M_V_LOAD_PH_C_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/V_ONLOAD_BY_V_M_V_LOAD_PH_C"
+                style="@style/TextInputLayoutStyle_PDF"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal" android:text="1"
+                    android:id="@+id/V_ONLOAD_BY_V_M_V_LOAD_PH_C__PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="25sp"
+                android:text="@string/Footer"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ACTIVE_POWER_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ACTIVE_POWER"
+                style="@style/TextInputLayoutStyle_PDF"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="13dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true"
+                    android:inputType="date" android:text="1"
+                    android:id="@+id/ACTIVE_POWER__PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/REACTIVE_POWER_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/REACTIVE_POWER"
+                style="@style/TextInputLayoutStyle_PDF"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true"
+                    android:inputType="date" android:text="1"
+                    android:id="@+id/REACTIVE_POWER__PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/COS_PHI_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/COS_PHI"
+                style="@style/TextInputLayoutStyle_PDF"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal" android:text="1"
+                    android:id="@+id/COS_PHI__PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/COMMENT_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/COMMENT"
+                style="@style/TextInputLayoutStyle_PDF"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true" android:text="1"
+                    android:id="@+id/COMMENT__PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TEST_BY_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/TEST_BY"
+                style="@style/TextInputLayoutStyle_PDF"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true" android:text="1"
+                    android:id="@+id/TEST_BY__PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/DATE_PDF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/DATE"
+                style="@style/TextInputLayoutStyle_PDF"
+                app:endIconMode="clear_text"
+                android:layout_marginBottom="12dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:singleLine="true"
+                    android:inputType="date" android:text="1"
+                    android:id="@+id/DATE__PDF"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/outlinedButton_PDF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Save"
+                style="?attr/materialButtonOutlinedStyle"
+                android:backgroundTint="#EE1122"
+                android:layout_marginBottom="5dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/clear_all_pdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/baseline_clear_all_black_24dp"
+        android:backgroundTint="#EE1111"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/top_PDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/baseline_keyboard_arrow_down_black_24dp"
+        android:backgroundTint="#EE1111"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Electricity</string>
+    <string name="title_activity_main">Electricity</string>
+    <string name="tab_text_1">Excel</string>
+    <string name="tab_text_2">PDF</string>
+
+    <!--Menu-->
+    <string name="Menu_Setting">Setting</string>
+    <string name="Menu_About">About</string>
+    <string name="Menu_Version">CheckTheLatestVersion</string>
+    <string name="Menu_Search">Search</string>
+
+    <!--Excel Menu-->
+    <string name="Menu_Excel_Visible_Fab">Visible Fab</string>
+
+    <!--Excel-->
+    <string name="Header">Header</string>
+    <string name="SUBSTATION">SUBSTATION</string>
+    <string name="BAY_NO">BAY NO</string>
+    <string name="PANEL_NO">PANEL NO</string>
+    <string name="METER_MANUFACTURER">METER MANUFACTURER</string>
+    <string name="CT_RATIO">CT RATIO</string>
+    <string name="PT_RATIO">PT RATIO</string>
+    <string name="CT_RATIO_CLASS">CLASS</string>
+    <string name="PT_RATIO_CLASS">CLASS</string>
+    <string name="METER_SCALE_RANGE">METER SCALE RANGE</string>
+    <string name="METER_MODEL_SERIAL_NO">METER MODEL--SERIAL NO</string>
+    <string name="REALـVALUEـIـLOAD">REAL VALUE-I LOAD</string>
+    <string name="REALـVALUEـIـLOAD_PHASE_A">PHASE A</string>
+    <string name="REALـVALUEـIـLOAD_PH_B">PH.B</string>
+    <string name="REALـVALUEـIـLOAD_PH_C">PH.C</string>
+    <string name="I_ONLOAD_by_clamp">I ONLOAD by clamp</string>
+    <string name="I_ONLOAD_by_clamp_PH_A">PH.A</string>
+    <string name="I_ONLOAD_by_clamp_PH_B">PH.B</string>
+    <string name="I_ONLOAD_by_clamp_PH_C">PH.C</string>
+    <string name="REAL_VALUE_V_LOAD">REAL VALUE-V LOAD</string>
+    <string name="REAL_VALUE_V_LOAD_PH_A">PH.A</string>
+    <string name="REAL_VALUE_V_LOAD_PH_B">PH.B</string>
+    <string name="REAL_VALUE_V_LOAD_PH_C">PH.C</string>
+    <string name="V_ONLOAD_BY_V_M_V_LOAD">V ONLOAD BY V.M-V LOAD</string>
+    <string name="V_ONLOAD_BY_V_M_V_LOAD_PH_A">PH.A</string>
+    <string name="V_ONLOAD_BY_V_M_V_LOAD_PH_B">PH.B</string>
+    <string name="V_ONLOAD_BY_V_M_V_LOAD_PH_C">PH.C</string>
+    <string name="ACTIVE_POWER">ACTIVE POWER</string>
+    <string name="REACTIVE_POWER">REACTIVE POWER</string>
+    <string name="COS_PHI">COS PHI</string>
+    <string name="COMMENT">COMMENT</string>
+    <string name="TEST_BY">TEST BY</string>
+    <string name="DATE">DATE</string>
+    <string name="Footer">Footer</string>
+
+    <!--    <string name="Body">METER MODEL&#45;&#45;SERIAL NO</string>-->
+    <!--    <string name="METER_MODEL_SERIAL_NO">METER MODEL&#45;&#45;SERIAL NO</string>-->
+    <!--    <string name="METER_MODEL_SERIAL_NO">METER MODEL&#45;&#45;SERIAL NO</string>-->
+
+    <string name="Save">Save</string>
+</resources>

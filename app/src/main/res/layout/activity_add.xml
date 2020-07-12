@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add"
+    android:orientation="vertical">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/Clear_All_Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/baseline_clear_all_black_24dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/SUBSTATION_Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/SUBSTATION"
+        android:layout_marginBottom="12dp"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/baseline_location_on_black_24dp"
+        android:layout_marginTop="13dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/SUBSTATION__Add"
+            style="@style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:completionThreshold="1"
+            android:singleLine="true"
+            android:text="1"
+            android:textCursorDrawable="@null" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/BAY_NO_Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/BAY_NO"
+        app:endIconMode="clear_text"
+        android:layout_marginBottom="12dp"
+        tools:ignore="MissingConstraints">
+
+        <AutoCompleteTextView
+            android:id="@+id/BAY_NO__Add"
+            style="@style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:completionThreshold="1"
+            android:singleLine="true"
+            android:text="1"
+            android:textCursorDrawable="@null" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PANEL_NO_Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/PANEL_NO"
+        app:endIconMode="clear_text"
+        android:layout_marginBottom="12dp"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/PANEL_NO__Add"
+            style="@style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:completionThreshold="1"
+            android:singleLine="true"
+            android:text="1"
+            android:textCursorDrawable="@null" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/METER_MANUFACTURER_Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/METER_MANUFACTURER"
+        app:endIconMode="clear_text"
+        android:layout_marginBottom="12dp"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/METER_MANUFACTURER__Add"
+            style="@style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:completionThreshold="1"
+            android:singleLine="true"
+            android:text="1"
+            android:textCursorDrawable="@null" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/CT_RATIO_Add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/CT_RATIO"
+            app:endIconMode="clear_text"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="5"
+            android:layout_marginRight="3dp"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/CT_RATIO__Add"
+                style="@style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:completionThreshold="1"
+                android:singleLine="true"
+                android:text="1"
+                android:textCursorDrawable="@null"
+                android:inputType="date"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/CT_RATIO_CLASS_Add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/CT_RATIO_CLASS"
+            app:endIconMode="clear_text"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="7"
+            android:layout_marginLeft="3dp"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/CT_RATIO_CLASS__Add"
+                style="@style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:completionThreshold="1"
+                android:singleLine="true"
+                android:text="1"
+                android:textCursorDrawable="@null"
+                android:inputType="numberDecimal"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/PT_RATIO_Add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/PT_RATIO"
+            app:endIconMode="clear_text"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="5"
+            android:layout_marginRight="3dp"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/PT_RATIO__Add"
+                style="@style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:completionThreshold="1"
+                android:singleLine="true"
+                android:text="1"
+                android:textCursorDrawable="@null"
+                android:inputType="date"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/PT_RATIO_CLASS_Add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/PT_RATIO_CLASS"
+            app:endIconMode="clear_text"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="7"
+            android:layout_marginLeft="3dp"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/PT_RATIO_CLASS__Add"
+                style="@style/Widget.MaterialComponents.AutoCompleteTextView.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:completionThreshold="1"
+                android:singleLine="true"
+                android:text="1"
+                android:textCursorDrawable="@null"
+                android:inputType="numberDecimal"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    <Button
+        android:id="@+id/save_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Save"
+        style="?attr/materialButtonOutlinedStyle"
+        android:backgroundTint="@color/Button_Click"
+        android:layout_marginBottom="5dp"
+        android:layout_gravity="center"
+        />
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

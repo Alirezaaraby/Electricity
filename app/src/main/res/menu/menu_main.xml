@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.guilanzamineng.myapplication.MainActivity">
+
+    <item
+        android:id="@+id/Search"
+        android:icon="?android:attr/actionModeWebSearchDrawable"
+        android:orderInCategory="1"
+        android:title="@string/Menu_Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" tools:targetApi="lollipop"/>
+
+    <item
+        android:id="@+id/action_Setting"
+        android:orderInCategory="100"
+        android:title="@string/Menu_Setting"
+        app:showAsAction="never" />
+
+    <item
+        android:orderInCategory="100"
+        android:title="@string/Menu_About"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/About_About"
+                android:title="@string/Menu_About">
+            </item>
+
+            <item
+                android:id="@+id/About_CheckLatestVersion"
+                android:title="@string/Menu_Version">
+            </item>
+        </menu>
+
+    </item>
+</menu>
